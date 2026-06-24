@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './hackaton.css';
-import euroLogo from './euro.png';
+import euroLogo from './EUpng.png';
+import actedLogo from './acted.png';
+import freedomLogo from './freedommm.png';
 
 const LOGO_ILMHONA = '/img/logo/ilmhonaa.png';
 
@@ -248,34 +250,26 @@ export default function HackatonPage() {
                     <p className="hk-partners-center-text">Партнеры форума</p>
                     <div className="hk-partners-row">
                         <div className="hk-partner-card">
-                            <div className="hk-partner-acted ">
-                                <span className="hk-partner-acted-main">acted</span>
-                                <span className="hk-partner-acted-sub">
-                                    Zero Exclusion · Carbon · Poverty
-                                </span>
-                            </div>
+                            <img src={actedLogo} alt="ACTED" className="hk-partner-logo-img" style={{ height: '100px' }} />
                         </div>
 
                         <div className="hk-partners-sep" />
 
                         <div className="hk-partner-card">
-                            <div className="hk-partner-fih">
-                                <FreedomITHubIcon />
-                                <span className="hk-partner-fih-text">freedom it hub</span>
-                            </div>
+                            <img src={freedomLogo} alt="Freedom IT Hub" className="hk-partner-logo-img" style={{ height: '180px' }} />
                         </div>
 
                         <div className="hk-partners-sep" />
 
                         <div className="hk-partner-card">
-                            <img src={LOGO_ILMHONA} alt="ilmhona" className="hk-partner-ilm-img" />
+                            <img src={LOGO_ILMHONA} alt="ilmhona" className="hk-partner-ilm-img" style={{ height: '180px' }} />
                         </div>
 
                         <div className="hk-partners-sep" />
 
                         <div className="hk-partner-card">
                             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '6px' }}>
-                                <img src={euroLogo} alt="European Union" className="hk-partner-eu-img" />
+                                <img src={euroLogo} alt="European Union" className="hk-partner-logo-img" style={{ filter: 'none', opacity: 1 }} />
                                 <span style={{ fontSize: '9px', fontWeight: 700, letterSpacing: '0.12em', color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', whiteSpace: 'nowrap' }}>
                                     Funded by the European Union
                                 </span>

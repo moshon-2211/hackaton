@@ -123,8 +123,14 @@
   filter: brightness(0) invert(1);
   opacity: 0.85;
 }
+.hk-partner-logo-img {
+  height: 54px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
+}
 .hk-partner-ilm-img {
-  height: 104px;
+  height: 54px;
   filter: brightness(0) invert(1);
   opacity: 0.85;
 }

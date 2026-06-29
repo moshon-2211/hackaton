@@ -101,10 +101,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 0;
-  flex-wrap: nowrap;
+  row-gap: 32px;
   width: 100%;
-  overflow-x: auto;
 }
 .hk-partner-card {
   display: flex;
@@ -126,8 +126,7 @@
 .hk-partner-logo-img {
   height: 54px;
   width: auto;
-  filter: brightness(0) invert(1);
-  opacity: 0.85;
+  opacity: 0.9;
 }
 .hk-partner-ilm-img {
   height: 54px;
@@ -144,7 +143,7 @@
   font-size: 28px;
   font-weight: 900;
   letter-spacing: 0.06em;
-  color: rgba(255,255,255,0.88);
+  color: #ffffff;
   line-height: 1;
   text-transform: lowercase;
 }
@@ -152,7 +151,7 @@
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.14em;
-  color: rgba(255,255,255,0.32);
+  color: rgba(255,255,255,0.6);
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -199,6 +198,101 @@
   height: 500px;
   background: radial-gradient(ellipse, rgba(0,213,181,0.14) 0%, transparent 70%);
   pointer-events: none;
+}
+
+/* 3ZERO Data Fest hero */
+.hk-hero-fest {
+  background: linear-gradient(160deg, #060c1a 0%, #0a1220 50%, #080f1c 100%);
+}
+.hk-hero-fest::after { display: none; }
+
+.hk-fest-deco {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.hk-fest-deco-1 {
+  width: 180px; height: 90px;
+  top: 10%; right: 8%;
+  background: #ff6b5b;
+  opacity: 0.85;
+  transform: rotate(-20deg);
+  clip-path: ellipse(50% 30% at 50% 20%);
+}
+.hk-fest-deco-2 {
+  width: 140px; height: 70px;
+  top: 14%; right: 5%;
+  border: 3px solid #ff6b5b;
+  background: transparent;
+  opacity: 0.5;
+  transform: rotate(-20deg);
+}
+.hk-fest-deco-3 {
+  width: 200px; height: 100px;
+  bottom: 18%; left: 5%;
+  border: 3px solid #3b5bdb;
+  background: transparent;
+  opacity: 0.5;
+  transform: rotate(15deg);
+}
+.hk-fest-deco-4 {
+  width: 120px; height: 60px;
+  bottom: 30%; left: 8%;
+  border: 3px solid #00d5b5;
+  background: transparent;
+  opacity: 0.35;
+  transform: rotate(15deg);
+}
+
+.hk-fest-title-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+.hk-fest-label {
+  font-size: clamp(20px, 3vw, 32px);
+  font-weight: 900;
+  color: #b8ff2e;
+  letter-spacing: 0.02em;
+  margin: 0 0 8px;
+  align-self: flex-start;
+}
+.hk-fest-oval-wrap {
+  position: relative;
+}
+.hk-fest-title {
+  font-size: clamp(52px, 10vw, 110px);
+  font-weight: 900;
+  line-height: 1;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+.hk-fest-sdgs {
+  color: #00e5ff;
+}
+.hk-fest-unlocked-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.hk-fest-oval-bg {
+  position: absolute;
+  inset: -10px -24px;
+  background: linear-gradient(135deg, #00e5ff 0%, #b8ff2e 100%);
+  border-radius: 50%;
+  z-index: 0;
+}
+.hk-fest-unlocked {
+  position: relative;
+  z-index: 1;
+  color: #0a1220;
 }
 .hk-hero-eyebrow {
   font-size: 12px;
@@ -514,7 +608,7 @@
   padding: 7px 18px;
   font-size: 12px;
   font-weight: 700;
-  color: #ff7070;
+  color: #520000;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 20px;

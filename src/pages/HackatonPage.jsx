@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './hackaton.css';
-import euroLogo from './EUpng.png';
+import euroLogo from './EU.png';
 import actedLogo from './acted.png';
 import swedLogo from './swed.png';
 import alifLogo from './alifff.png';
@@ -84,11 +84,7 @@ export default function HackatonPage() {
           <img src={LOGO_ILMHONA} alt="ilmhona" />
           <span className="hk-nav-badge">Data Fest</span>
         </Link>
-        <div className="hk-nav-links">
-          <a href="#tracks">Треки</a>
-          <a href="#program">Программа</a>
-          <a href="#why">Почему участвовать</a>
-        </div>
+        
         <button
           className={'hk-burger' + (menuOpen ? ' open' : '')}
           onClick={() => setMenuOpen(o => !o)}
@@ -153,6 +149,12 @@ export default function HackatonPage() {
           <div className="hk-partners-row">
 
             <div className="hk-partner-card">
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '6px' }}>
+                <img src={euroLogo} alt="European Union" style={{ height: '110px', filter: 'none', opacity: 1 }} />
+                
+              </div>
+            </div>
+            <div className="hk-partner-card">
               <img src={swedLogo} alt="SWED" style={{ height: '80px', width: 'auto', objectFit: 'contain', filter: 'invert(1) hue-rotate(180deg)', opacity: 0.9 }} />
             </div>
 
@@ -188,14 +190,6 @@ export default function HackatonPage() {
 
             <div className="hk-partners-sep" />
 
-            <div className="hk-partner-card">
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '6px' }}>
-                <img src={euroLogo} alt="European Union" style={{ height: '60px', filter: 'none', opacity: 1 }} />
-                <span style={{ fontSize: '9px', fontWeight: 700, letterSpacing: '0.12em', color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', whiteSpace: 'nowrap' }}>
-                  Funded by the European Union
-                </span>
-              </div>
-            </div>
 
           </div>
         </div>
@@ -220,8 +214,7 @@ export default function HackatonPage() {
         <span className="hk-footer-copy">© 2026 Ilmhona · 3ZERO Data Fest: SDGs Unlocked · Душанбе</span>
         <div className="hk-footer-links">
           <Link to="/">Ilmhona.org</Link>
-          <a href="#tracks">Треки</a>
-          <a href="#program">Программа</a>
+          
         </div>
       </footer>
 

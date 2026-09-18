@@ -201,7 +201,7 @@ export default function HackatonPage() {
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
           <div className="hk-section">
             <p className="hk-section-eyebrow">30 июня · IT Park Tajikistan</p>
-            <h2 className="hk-section-title">Программа фестиваля</h2>
+            <h2 className="hk-section-title">Программа форума</h2>
             <p className="hk-section-sub">
               Панели, воркшопы, шоукейс финалистов и церемония награждения.
             </p>

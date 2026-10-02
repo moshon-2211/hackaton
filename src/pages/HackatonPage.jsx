@@ -138,7 +138,7 @@ export default function HackatonPage() {
         </div>
 
         <a className="hk-btn-outline" href="#program">
-          Смотреть программу
+           программа
         </a>
       </section>
 

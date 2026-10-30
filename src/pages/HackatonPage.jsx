@@ -9,7 +9,7 @@ import alifLogo from './alifff.png';
 const LOGO_ILMHONA = '/img/logo/ilmhonaa.png';
 
 const program = [
-  { time: '12:30 – 13:00', event: 'Регистрация и нетворкинг',               detail: '',                                                                                          type: 'break'     },
+  { time: '12:40 – 13:00', event: 'Регистрация и нетворкинг',               detail: '',                                                                                          type: 'break'     },
   { time: '13:00 – 13:30', event: 'Официальная церемония открытия',          detail: '',                                                                                          type: 'highlight' },
   { time: '13:30 – 14:10', event: 'Youth Asks',                              detail: 'Диалог молодёжи с лидерами перемен',                                                        type: 'normal'    },
   { time: '14:10 – 14:50', event: 'Панельная дискуссия',                     detail: 'ЦУР в действии: данные, цифровые инновации и достойная занятость для устойчивого развития', type: 'normal'    },
